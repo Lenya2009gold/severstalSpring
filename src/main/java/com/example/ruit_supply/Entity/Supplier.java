@@ -28,5 +28,5 @@ public class Supplier {
     @OneToMany(mappedBy = "supplier", cascade = CascadeType.ALL)
     @JsonManagedReference
     @JsonIgnore
-    private List<Delivery> deliveries= new ArrayList<>();
+     List<Delivery> deliveries= new ArrayList<>();
 }

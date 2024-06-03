@@ -58,8 +58,8 @@ public class DeliveryService {
         List<Delivery> deliveries = deliveryRepository.findAll();
         for (Delivery delivery : deliveries) {
             delivery.getDeliveryDetails().forEach(detail -> {
-                detail.getProduct().getName(); // Инициализация ленивого поля
-                detail.getProduct().getType(); // Инициализация ленивого поля
+                detail.getProduct().getName();
+                detail.getProduct().getType();
             });
         }
         return deliveries;
